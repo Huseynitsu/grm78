@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/60363fc8c5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header both_header">
+        <div class="logo">
+            <img src="/img/grmlogo.png" alt="logo">
+        </div>
+        <div class="d-flex gap-4">
+            <div class="navbar">
+                <ul>
+                    <li><a class="tel" href="tel:+79992437878"><i class="fa-solid fa-phone"></i> +7 (999) 243-78-78</a>
+                    </li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Обзоры</a></li>
+                    <li><a href="#">Контакт</a></li>
+                </ul>
+            </div>
+            <div class="modal_btn">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Отправить запрос
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="second-header both_header d-none d-lg-flex show" role="navigation" aria-label="Fixed navigation">
+        <div class="logo">
+            <img src="/img/grmlogo.png" alt="logo">
+        </div>
+        <div class="d-flex gap-4">
+            <div class="navbar">
+                <ul>
+                    <li><a class="tel" href="tel:+79992437878"><i class="fa-solid fa-phone"></i> +7 (999) 243-78-78</a>
+                    </li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Обзоры</a></li>
+                    <li><a href="#">Контакт</a></li>
+                </ul>
+            </div>
+            <div class="modal_btn">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Отправить запрос
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="mainSlider">
+            <div class="swiper mainSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container h-100">
+                            <div class="swiper_content">
+                                <h2>Быстрая помощь на дороге</h2>
+                                <div class="swiper_textimg">
+                                    <div>
+                                        <p>Мы приедем всего за 15–30 минут, чтобы помочь вам в любой ситуации.</p>
+                                        <ul>
+                                            <li>✅ Молниеносный выезд специалистов</li>
+                                            <li>✅ Работаем 24/7 без выходных</li>
+                                            <li>✅ Помощь как в городе, так и за его пределами</li>
+                                        </ul>
+                                    </div>
+                                    <img src="/img/carservice.png" alt="carservice">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container h-100">
+                            <div class="swiper_content">
+                                <h2>Быстрая помощь на дороге</h2>
+                                <div class="swiper_textimg">
+                                    <div>
+                                        <p>Мы приедем всего за 15–30 минут, чтобы помочь вам в любой ситуации.</p>
+                                        <ul>
+                                            <li>✅ Молниеносный выезд специалистов</li>
+                                            <li>✅ Работаем 24/7 без выходных</li>
+                                            <li>✅ Помощь как в городе, так и за его пределами</li>
+                                        </ul>
+                                    </div>
+                                    <img src="/img/carservice.png" alt="carservice">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="gray_bg" id="advantages">
+            <div class="container">
+                <h2 class="sec_title sec_line mb-5">Преимущества</h2>
+                <p class="w-75 fs-6">Мы предоставляем качественные услуги, быстро реагируем на запросы клиентов и
+                    гарантируем высокий уровень профессионализма.</p>
+                <div class="adv_cards">
+                    <div class="adv_card">
+                        <div class="adv_icon">
+                            <img src="/img/business-people.png">
+                        </div>
+                        <div class="adv_content">
+                            <h2>Ориентация на клиента</h2>
+                            <p>Мы считаем своим главным приоритетом своевременное и точное удовлетворение потребностей
+                                клиентов.</p>
+                        </div>
+                    </div>
+                    <div class="adv_card">
+                        <div class="adv_icon">
+                            <img src="/img/global-network.png">
+                        </div>
+                        <div class="adv_content">
+                            <h2>Широкая сеть обслуживания</h2>
+                            <p>Мы предоставляем качественные услуги более чем 150 местным и международным компаниям за
+                                короткое время.</p>
+                        </div>
+                    </div>
+                    <div class="adv_card">
+                        <div class="adv_icon">
+                            <img src="/img/iso.png">
+                        </div>
+                        <div class="adv_content">
+                            <h2>Соответствие международным стандартам</h2>
+                            <p>Все наши услуги соответствуют строгим международным стандартам качества.</p>
+                        </div>
+                    </div>
+                    <div class="adv_card">
+                        <div class="adv_icon">
+                            <img src="/img/work-team.png">
+                        </div>
+                        <div class="adv_content">
+                            <h2>Профессиональная и опытная команда</h2>
+                            <p>Все наши сотрудники высококвалифицированы и постоянно совершенствуют свои знания.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="both_about">
+                    <div class="left_about">
+                        <h2 class="sec_title sec_line mb-5">О нас</h2>
+                        <p>Мы — команда профессиональных автоэлектриков и диагностов с многолетним опытом работы.
+                            Предоставляем выездные услуги по Москве и области с гарантией результата. Наша цель — быстро
+                            и качественно помочь водителям в сложных ситуациях на дороге.</p>
+                        <ul>
+                            <li>Выездная диагностика автомобилей любой сложности;</li>
+                            <li>Запуск двигателя и зарядка аккумулятора;</li>
+                            <li>Вскрытие капота, дверей, отключение сигнализаций;</li>
+                            <li>Замена ремня ГРМ, генератора, ГУР и других узлов;</li>
+                            <li>Ремонт и поиск неисправностей в электрике автомобиля.</li>
+                        </ul>
+                        <p>Каждый наш специалист — это опытный мастер, который знает, как найти и устранить проблему
+                            максимально быстро. Мы ценим ваше время и уверены в качестве своей работы, поэтому
+                            предоставляем гарантию на все виды услуг.</p>
+                        <p>Звоните нам по телефону <strong>+7 (999) 243-78-78</strong> — и мы приедем на помощь!</p>
+                    </div>
+                    <div class="right_about">
+                        <img src="/img/about.webp" alt="about">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gray_bg" id="services">
+            <div class="container">
+                <h2 class="sec_title sec_line">Услуги</h2>
+                <div class="service_cards">
+                    <div class="service_card d-flex flex-column">
+                        <h2>Диагностика и ремонт генератора</h2>
+                        <img src="/img/alternatot.png" alt="">
+                        <div class="card__content">
+                            <p class="card__description">Мы быстро и качественно проведём диагностику вашего генератора,
+                                определим неисправности и выполним ремонт любой сложности. Благодаря нашему опыту и
+                                профессиональному оборудованию, ваш автомобиль снова будет в полном порядке. Доверьте
+                                генератор нашим специалистам — и забудьте о проблемах с электрикой!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service_card d-flex flex-column">
+                        <h2>Диагностика и ремонт генератора</h2>
+                        <img src="/img/alternatot.png" alt="">
+                        <div class="card__content">
+                            <p class="card__description">Мы быстро и качественно проведём диагностику вашего генератора,
+                                определим неисправности и выполним ремонт любой сложности. Благодаря нашему опыту и
+                                профессиональному оборудованию, ваш автомобиль снова будет в полном порядке. Доверьте
+                                генератор нашим специалистам — и забудьте о проблемах с электрикой!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service_card d-flex flex-column">
+                        <h2>Диагностика и ремонт генератора</h2>
+                        <img src="/img/alternatot.png" alt="">
+                        <div class="card__content">
+                            <p class="card__description">Мы быстро и качественно проведём диагностику вашего генератора,
+                                определим неисправности и выполним ремонт любой сложности. Благодаря нашему опыту и
+                                профессиональному оборудованию, ваш автомобиль снова будет в полном порядке. Доверьте
+                                генератор нашим специалистам — и забудьте о проблемах с электрикой!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service_card d-flex flex-column">
+                        <h2>Диагностика и ремонт генератора</h2>
+                        <img src="/img/alternatot.png" alt="">
+                        <div class="card__content">
+                            <p class="card__description">Мы быстро и качественно проведём диагностику вашего генератора,
+                                определим неисправности и выполним ремонт любой сложности. Благодаря нашему опыту и
+                                профессиональному оборудованию, ваш автомобиль снова будет в полном порядке. Доверьте
+                                генератор нашим специалистам — и забудьте о проблемах с электрикой!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service_card d-flex flex-column">
+                        <h2>Диагностика и ремонт генератора</h2>
+                        <img src="/img/alternatot.png" alt="">
+                        <div class="card__content">
+                            <p class="card__description">Мы быстро и качественно проведём диагностику вашего генератора,
+                                определим неисправности и выполним ремонт любой сложности. Благодаря нашему опыту и
+                                профессиональному оборудованию, ваш автомобиль снова будет в полном порядке. Доверьте
+                                генератор нашим специалистам — и забудьте о проблемах с электрикой!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service_card d-flex flex-column">
+                        <h2>Диагностика и ремонт генератора</h2>
+                        <img src="/img/alternatot.png" alt="">
+                        <div class="card__content">
+                            <p class="card__description">Мы быстро и качественно проведём диагностику вашего генератора,
+                                определим неисправности и выполним ремонт любой сложности. Благодаря нашему опыту и
+                                профессиональному оборудованию, ваш автомобиль снова будет в полном порядке. Доверьте
+                                генератор нашим специалистам — и забудьте о проблемах с электрикой!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="faq_holder">
+                    <div class="faq-head">
+                        <p class="faq-title sec_title sec_line">Часто задаваемые вопросы </p>
+                    </div>
+                    <div class="faq-body pt-4">
+                        <div class="faq-list">
+                            <div class="accordion faq-accordion accordion-flush" id="faq-accordionFlush">
+                                <div class="accordion-item faq-accordion-item">
+                                    <h2 class="accordion-header faq-accordion-header">
+                                        <button class="faq-accordion-button accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq-flush-collapse-42"
+                                            aria-expanded="false" aria-controls="faq-flush-collapse-42">
+                                            <p class="faq-accordion-button-txt"> Сколько времени занимает выезд и
+                                                диагностика?
+                                            </p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="faq-circle w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M12 4.5v15m7.5-7.5h-15"></path>
+                                            </svg>
+                                        </button>
+                                    </h2>
+                                    <div id="faq-flush-collapse-42"
+                                        class="faq-accordion-collapse accordion-collapse collapse"
+                                        data-bs-parent="#faq-accordionFlush">
+                                        <div class="faq-accordion-body accordion-body">
+                                            <p>Мы обычно приезжаем в течение 30-60 минут после вызова. Диагностика
+                                                занимает от 20 до 40 минут в зависимости от сложности проблемы.&nbsp;
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item faq-accordion-item">
+                                    <h2 class="accordion-header faq-accordion-header">
+                                        <button class="faq-accordion-button accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq-flush-collapse-41"
+                                            aria-expanded="false" aria-controls="faq-flush-collapse-41">
+                                            <p class="faq-accordion-button-txt"> Вы работаете с любыми марками
+                                                автомобилей?</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="faq-circle w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M12 4.5v15m7.5-7.5h-15"></path>
+                                            </svg>
+                                        </button>
+                                    </h2>
+                                    <div id="faq-flush-collapse-41"
+                                        class="faq-accordion-collapse accordion-collapse collapse"
+                                        data-bs-parent="#faq-accordionFlush" style="">
+                                        <div class="faq-accordion-body accordion-body">
+                                            <p>Да, мы обслуживаем все популярные марки и модели автомобилей, включая
+                                                отечественные и иностранные.&nbsp;&nbsp;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item faq-accordion-item">
+                                    <h2 class="accordion-header faq-accordion-header">
+                                        <button class="faq-accordion-button accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq-flush-collapse-4"
+                                            aria-expanded="false" aria-controls="faq-flush-collapse-4">
+                                            <p class="faq-accordion-button-txt"> Как дается гарантия на выполненные
+                                                работы?</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="faq-circle w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M12 4.5v15m7.5-7.5h-15"></path>
+                                            </svg>
+                                        </button>
+                                    </h2>
+                                    <div id="faq-flush-collapse-4"
+                                        class="faq-accordion-collapse accordion-collapse collapse"
+                                        data-bs-parent="#faq-accordionFlush">
+                                        <div class="faq-accordion-body accordion-body">
+                                            <p>Мы предоставляем гарантию на выполненные работы сроком от 14 дней до 1
+                                                месяца, в зависимости от типа ремонта.&nbsp;</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="feedback">
+            <div class="container">
+                <h2 class="sec_title sec_line">ОТЗЫВЫ О НАШЕЙ РАБОТЕ</h2>
+                <div class="feedback_imgs pt-5">
+                    <img src="/img/44946545_334_q70.webp" alt="feedback">
+                    <img src="/img/44946573.jpg" alt="">
+                    <img src="/img/44946575.jpg" alt="">
+                    <img src="/img/44946583.jpg" alt="">
+                    <img src="/img/44946583.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="call-to-action">
+            <div class="container" bis_skin_checked="1">
+                <div class="content_area" bis_skin_checked="1">
+                    <div class="row" bis_skin_checked="1">
+                        <div class="col-12 col-xl-6 col-lg-5" bis_skin_checked="1">
+                            <div class="call_to_action_content" bis_skin_checked="1">
+                                <h3>
+                                    <img loading="lazy" src="/img/shake-hand.webp" alt="hand icon" height="50px"
+                                        width="50px">
+                                    Заполните все поля и мы с вами свяжемся!
+                                </h3>
+                                <div class="mt-2" id="ctaresponse"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6 col-lg-7" bis_skin_checked="1">
+                            <form id="ctaform">
+                                <div class="forms_area" bis_skin_checked="1">
+                                    <div class="forms_textarea" bis_skin_checked="1">
+                                        <textarea id="textarea" aria-labelledby="help_you" required="true"
+                                            name="message"></textarea>
+                                        <label for="textarea" class="call_label">Напишите как мы можем вам
+                                            помочь</label>
+                                    </div>
+                                    <div class="forms_input" bis_skin_checked="1">
+                                        <input type="text" id="input-1" aria-labelledby="name" required="true"
+                                            name="name">
+                                        <label for="input-1" class="call_label">Ваше имя</label>
+                                    </div>
+                                    <div class="forms_input" bis_skin_checked="1">
+                                        <input type="text" id="input-2" aria-labelledby="phone_number" required="true"
+                                            name="phone">
+                                        <label for="input-2" class="call_label">Номер телефона</label>
+                                    </div>
+                                    <div class="forms_input" bis_skin_checked="1">
+                                        <input type="text" id="input-3" aria-labelledby="company" required="true"
+                                            name="email">
+                                        <label for="input-3" class="call_label">Почта</label>
+                                    </div>
+
+                                    <div class="forms_btn" bis_skin_checked="1">
+                                        <button type="submit" aria-label="get_order" name="get_order">
+                                            <div class="svg-wrapper-1" bis_skin_checked="1">
+                                                <div class="svg-wrapper" bis_skin_checked="1">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        width="24" height="24">
+                                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                                        <path fill="currentColor"
+                                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <span>Получить консультацию</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="map_form" class="gray_bg">
+            <div class="container">
+                <h2 class="sec_title">Свяжитесь с нами и приезжайте!</h2>
+            </div>
+            <ul class="nav nav-tabs pt-5 justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Адрес 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Адрес 2</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                    tabindex="0">
+                    <div class="form_grid">
+                        <div class="address_side">
+                            <div class="p-sm-0 border-end border-bottom border-dark">
+                                <div class="map-imgs">
+                                    <div class="row m-0 w-100">
+                                        <div class="col-6 p-0"><img height="100%" width="100%" src="/img/grmsekil.avif"
+                                                alt=""></div>
+                                        <div class="col-6 p-0"><img height="100%" width="100%" src="/img/grmsekil2.avif"
+                                                alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h4>Туран 11</h4>
+                                    <div class="d-flex align-items-center gap-2 my-4">
+                                        <span style="font-weight: 600;">Найдите нас по карте:</span>
+                                        <a target="_blank"
+                                            href="https://yandex.az/maps/2/saint-petersburg/?ll=30.404568%2C60.021456&mode=routes&rtext=~60.021613%2C30.404806&rtt=auto&ruri=~&source=route&source=route&z=16.6">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.0002 1C10.2208 1.00094 8.48163 1.52919 7.00231 2.51803C5.523 3.50687 4.36991 4.91194 3.68872 6.55577C3.00752 8.19959 2.82876 10.0084 3.17503 11.7538C3.52129 13.4991 4.37704 15.1027 5.63419 16.362C7.26419 17.992 11.1002 20.35 11.3272 22.827C11.3612 23.197 11.6302 23.5 12.0002 23.5C12.3702 23.5 12.6402 23.197 12.6732 22.827C12.9002 20.35 16.7332 17.996 18.3622 16.367C19.6208 15.1082 20.478 13.5046 20.8254 11.7587C21.1727 10.0129 20.9947 8.20326 20.3138 6.55857C19.6329 4.91388 18.4797 3.50799 16.9999 2.5186C15.5201 1.52921 13.7803 1.00074 12.0002 1Z"
+                                                    fill="#FF4433"></path>
+                                                <path
+                                                    d="M11.9999 13.0789C11.5956 13.0789 11.1952 12.9993 10.8216 12.8445C10.4481 12.6898 10.1086 12.463 9.82272 12.1771C9.53681 11.8912 9.31001 11.5517 9.15527 11.1782C9.00054 10.8046 8.9209 10.4042 8.9209 9.9999C8.9209 9.59556 9.00054 9.19518 9.15527 8.82162C9.31001 8.44805 9.53681 8.10863 9.82272 7.82272C10.1086 7.53681 10.4481 7.31001 10.8216 7.15527C11.1952 7.00054 11.5956 6.9209 11.9999 6.9209C12.8165 6.9209 13.5997 7.24529 14.1771 7.82272C14.7545 8.40014 15.0789 9.1833 15.0789 9.9999C15.0789 10.8165 14.7545 11.5997 14.1771 12.1771C13.5997 12.7545 12.8165 13.0789 11.9999 13.0789Z"
+                                                    fill="white"></path>
+                                            </svg></a>
+                                        <a target="_blank"
+                                            href="https://2gis.ru/spb/search/%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C%2069%2C%201%20%D1%8D%D1%82%D0%B0%D0%B6%20%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%20%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9/geo/5348660212762987/30.404572%2C60.021505?m=30.404537%2C60.021523%2F17.04">
+                                            <img src="/img/2gis.png" width="24px" height="24px"
+                                                style="width:24px !important">
+                                        </a>
+                                    </div>
+                                    <div class="qrafik d-flex ">
+                                        <h5>График работы</h5>
+                                        <div>
+                                            <p>
+                                                Пн-сб: 09:00—21:00
+                                            </p>
+                                            <p>
+                                                ВС: Выходной
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="qrafik d-flex">
+                                        <h5>Контакты</h5>
+                                        <div>
+                                            <ul class="d-flex gap-1 align-items-center">
+                                                <li>
+                                                    <a href="tel:+79992437878"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                            version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            width="25" height="25" x="0" y="0" viewBox="0 0 512 512"
+                                                            style="enable-background:new 0 0 512 512"
+                                                            xml:space="preserve" class="">
+                                                            <g>
+                                                                <circle cx="256" cy="256" r="256" fill="#2196f3"
+                                                                    opacity="1" data-original="#2196f3" class="">
+                                                                </circle>
+                                                                <path fill="#ffffff" fill-rule="evenodd"
+                                                                    d="m412.424 349.946-.273.688c-2.577 6.578-5.166 13.149-7.88 19.677-2.331 5.61-4.743 11.241-7.408 16.7-1.593 3.26-4.116 8.409-6.676 10.969a51.473 51.473 0 0 1-8.588 6.928c-17.86 11.431-40.186 9.82-59.813 4.557-84.306-22.585-196.673-134.952-219.26-219.257-5.26-19.633-6.868-41.965 4.574-59.825a50.861 50.861 0 0 1 6.914-8.577c2.557-2.56 7.712-5.082 10.969-6.675 5.465-2.665 11.1-5.077 16.71-7.408 6.525-2.7 13.1-5.3 19.673-7.88l.685-.264a15.416 15.416 0 0 1 19.044 6.655l32.593 56.466a15.517 15.517 0 0 1-5.66 21.128c-11.529 6.661-20.727 17.023-23.444 30.311a44.606 44.606 0 0 0 8.22 36.581 347.09 347.09 0 0 0 32.12 36.355 347.2 347.2 0 0 0 36.363 32.125 44.586 44.586 0 0 0 36.584 8.221c13.276-2.714 23.65-11.918 30.306-23.447a15.508 15.508 0 0 1 21.122-5.66l56.46 32.6a15.413 15.413 0 0 1 6.665 19.032z"
+                                                                    opacity="1" data-original="#ffffff"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+
+                                                <li><a href="https://wa.me/+79992437878">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            viewBox="0 0 12.031 12.031" xml:space="preserve">
+                                                            <g data-name="Layer 2">
+                                                                <g data-name="09.whatsapp">
+                                                                    <path fill="#29a71a" data-original="#29a71a"
+                                                                        d="M12.031 6.016a6.016 6.016 0 0 1-6.015 6.015A6.016 6.016 0 0 1 0 6.016a6.016 6.016 0 0 1 12.031 0">
+                                                                    </path>
+                                                                    <g fill="#fff">
+                                                                        <path
+                                                                            d="M8.668 3.363a3.73 3.73 0 0 0-5.976 4.315L2.297 9.6a.15.15 0 0 0 .022.111.15.15 0 0 0 .153.06l1.883-.446a3.73 3.73 0 0 0 4.314-5.962M8.081 8.05a2.92 2.92 0 0 1-3.364.547l-.262-.13-1.155.274.003-.015.239-1.162-.128-.254a2.92 2.92 0 0 1 .537-3.391 2.92 2.92 0 0 1 4.13 0l.015.015a2.917 2.917 0 0 1-.015 4.114"
+                                                                            data-original="#ffffff"></path>
+                                                                        <path
+                                                                            d="M7.979 7.197c-.141.223-.365.496-.646.563-.493.12-1.247.004-2.188-.872l-.012-.01c-.827-.766-1.041-1.403-.989-1.909.029-.287.268-.547.47-.716a.268.268 0 0 1 .42.096l.305.684a.26.26 0 0 1-.034.274l-.153.2a.26.26 0 0 0-.023.296c.086.152.293.373.522.579.257.232.542.445.722.518a.26.26 0 0 0 .286-.06l.178-.179a.28.28 0 0 1 .267-.069l.722.206a.274.274 0 0 1 .153.404"
+                                                                            data-original="#ffffff"></path>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </a></li>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            viewBox="0 0 11.908 11.908" xml:space="preserve">
+                                                            <path fill="#039be5" data-original="#039be5"
+                                                                d="M11.908 5.954a5.954 5.954 0 0 1-5.954 5.954A5.954 5.954 0 0 1 0 5.954a5.954 5.954 0 0 1 11.908 0">
+                                                            </path>
+                                                            <path fill="#fff"
+                                                                d="m2.723 5.822 5.74-2.215c.264-.092.498.061.417.467l-.976 4.603q-.111.487-.538.254L5.883 7.833l-.722.691c-.081.082-.142.142-.305.142l.102-1.514 2.753-2.489c.122-.101-.03-.162-.182-.061L4.125 6.746l-1.473-.457c-.315-.102-.325-.315.071-.477"
+                                                                data-original="#ffffff"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank" href="https://www.instagram.com/grm78.ru/">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="25"
+                                                            height="25" x="0" y="0" viewBox="0 0 1000 1000"
+                                                            style="enable-background:new 0 0 512 512"
+                                                            xml:space="preserve" class="">
+                                                            <g>
+                                                                <linearGradient id="a" x1="146.447" x2="853.554"
+                                                                    y1="853.554" y2="146.447"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#ffd521"></stop>
+                                                                    <stop offset=".055" stop-color="#ffd020"></stop>
+                                                                    <stop offset=".124" stop-color="#fec01e"></stop>
+                                                                    <stop offset=".2" stop-color="#fca71b"></stop>
+                                                                    <stop offset=".282" stop-color="#fa8316"></stop>
+                                                                    <stop offset=".368" stop-color="#f85510"></stop>
+                                                                    <stop offset=".456" stop-color="#f51e09"></stop>
+                                                                    <stop offset=".5" stop-color="#f30005"></stop>
+                                                                    <stop offset=".503" stop-color="#f20007"></stop>
+                                                                    <stop offset=".597" stop-color="#e1003b"></stop>
+                                                                    <stop offset=".688" stop-color="#d30067"></stop>
+                                                                    <stop offset=".776" stop-color="#c70088"></stop>
+                                                                    <stop offset=".859" stop-color="#bf00a0"></stop>
+                                                                    <stop offset=".936" stop-color="#bb00af"></stop>
+                                                                    <stop offset="1" stop-color="#b900b4"></stop>
+                                                                </linearGradient>
+                                                                <path fill="url(#a)"
+                                                                    d="M500 1000C223.9 1000 0 776.1 0 500S223.9 0 500 0s500 223.9 500 500-223.9 500-500 500z"
+                                                                    opacity="1" data-original="url(#a)" class=""></path>
+                                                                <g fill="#fff">
+                                                                    <path
+                                                                        d="M500 220.2c91.1 0 101.9.3 137.9 2 33.3 1.5 51.4 7.1 63.4 11.8 15.9 6.2 27.3 13.6 39.2 25.5s19.3 23.3 25.5 39.2c4.7 12 10.2 30.1 11.8 63.4 1.6 36 2 46.8 2 137.9s-.3 101.9-2 137.9c-1.5 33.3-7.1 51.4-11.8 63.4-6.2 15.9-13.6 27.3-25.5 39.2s-23.3 19.3-39.2 25.5c-12 4.7-30.1 10.2-63.4 11.8-36 1.6-46.8 2-137.9 2s-101.9-.3-137.9-2c-33.3-1.5-51.4-7.1-63.4-11.8-15.9-6.2-27.3-13.6-39.2-25.5s-19.3-23.3-25.5-39.2c-4.7-12-10.2-30.1-11.8-63.4-1.6-36-2-46.8-2-137.9s.3-101.9 2-137.9c1.5-33.3 7.1-51.4 11.8-63.4 6.2-15.9 13.6-27.3 25.5-39.2s23.3-19.3 39.2-25.5c12-4.7 30.1-10.2 63.4-11.8 36-1.7 46.8-2 137.9-2m0-61.5c-92.7 0-104.3.4-140.7 2.1-36.3 1.7-61.1 7.4-82.9 15.9C254 185.3 234.9 197 216 216c-19 19-30.6 38-39.4 60.5-8.4 21.7-14.2 46.5-15.9 82.9s-2.1 48-2.1 140.7.4 104.3 2.1 140.7c1.7 36.3 7.4 61.1 15.9 82.9C185.3 746 197 765.1 216 784c19 19 38 30.6 60.5 39.4 21.7 8.4 46.5 14.2 82.9 15.9s48 2.1 140.7 2.1 104.3-.4 140.7-2.1c36.3-1.7 61.1-7.4 82.9-15.9C746 814.7 765.1 803 784 784c19-19 30.6-38 39.4-60.5 8.4-21.7 14.2-46.5 15.9-82.9s2.1-48 2.1-140.7-.4-104.3-2.1-140.7c-1.7-36.3-7.4-61.1-15.9-82.9C814.7 254 803 234.9 784 216c-19-19-38-30.6-60.5-39.4-21.7-8.4-46.5-14.2-82.9-15.9-36.3-1.6-47.9-2-140.6-2z"
+                                                                        fill="#ffffff" opacity="1"
+                                                                        data-original="#ffffff"></path>
+                                                                    <path
+                                                                        d="M500 324.7c-96.8 0-175.3 78.5-175.3 175.3S403.2 675.3 500 675.3 675.3 596.8 675.3 500 596.8 324.7 500 324.7zm0 289.1c-62.8 0-113.8-50.9-113.8-113.8s51-113.8 113.8-113.8S613.8 437.1 613.8 500s-51 113.8-113.8 113.8z"
+                                                                        fill="#ffffff" opacity="1"
+                                                                        data-original="#ffffff"></path>
+                                                                    <circle cx="682.2" cy="317.8" r="41" fill="#ffffff"
+                                                                        opacity="1" data-original="#ffffff">
+                                                                    </circle>
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map_side">
+                            <div class="p-0 h-100 border-start border-bottom border-dark">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                    tabindex="0">
+
+                    <div class="form_grid">
+                        <div class="address_side">
+                            <div class="p-sm-0 border-end border-bottom border-dark">
+                                <div class="map-imgs">
+                                    <div class="row m-0 w-100">
+                                        <div class="col-6 p-0"><img height="100%" width="100%" src="/img/grmsekil.avif"
+                                                alt=""></div>
+                                        <div class="col-6 p-0"><img height="100%" width="100%" src="/img/grmsekil2.avif"
+                                                alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <h4>Туран 11</h4>
+                                    <div class="d-flex align-items-center gap-2 my-4">
+                                        <span style="font-weight: 600;">Найдите нас по карте:</span>
+                                        <a target="_blank"
+                                            href="https://yandex.az/maps/2/saint-petersburg/?ll=30.404568%2C60.021456&mode=routes&rtext=~60.021613%2C30.404806&rtt=auto&ruri=~&source=route&source=route&z=16.6">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.0002 1C10.2208 1.00094 8.48163 1.52919 7.00231 2.51803C5.523 3.50687 4.36991 4.91194 3.68872 6.55577C3.00752 8.19959 2.82876 10.0084 3.17503 11.7538C3.52129 13.4991 4.37704 15.1027 5.63419 16.362C7.26419 17.992 11.1002 20.35 11.3272 22.827C11.3612 23.197 11.6302 23.5 12.0002 23.5C12.3702 23.5 12.6402 23.197 12.6732 22.827C12.9002 20.35 16.7332 17.996 18.3622 16.367C19.6208 15.1082 20.478 13.5046 20.8254 11.7587C21.1727 10.0129 20.9947 8.20326 20.3138 6.55857C19.6329 4.91388 18.4797 3.50799 16.9999 2.5186C15.5201 1.52921 13.7803 1.00074 12.0002 1Z"
+                                                    fill="#FF4433"></path>
+                                                <path
+                                                    d="M11.9999 13.0789C11.5956 13.0789 11.1952 12.9993 10.8216 12.8445C10.4481 12.6898 10.1086 12.463 9.82272 12.1771C9.53681 11.8912 9.31001 11.5517 9.15527 11.1782C9.00054 10.8046 8.9209 10.4042 8.9209 9.9999C8.9209 9.59556 9.00054 9.19518 9.15527 8.82162C9.31001 8.44805 9.53681 8.10863 9.82272 7.82272C10.1086 7.53681 10.4481 7.31001 10.8216 7.15527C11.1952 7.00054 11.5956 6.9209 11.9999 6.9209C12.8165 6.9209 13.5997 7.24529 14.1771 7.82272C14.7545 8.40014 15.0789 9.1833 15.0789 9.9999C15.0789 10.8165 14.7545 11.5997 14.1771 12.1771C13.5997 12.7545 12.8165 13.0789 11.9999 13.0789Z"
+                                                    fill="white"></path>
+                                            </svg></a>
+                                        <a target="_blank"
+                                            href="https://2gis.ru/spb/search/%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%2C%2069%2C%201%20%D1%8D%D1%82%D0%B0%D0%B6%20%D0%A0%D0%B0%D0%B9%D0%BE%D0%BD%20%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9/geo/5348660212762987/30.404572%2C60.021505?m=30.404537%2C60.021523%2F17.04">
+                                            <img src="/img/2gis.png" width="24px" height="24px"
+                                                style="width:24px !important">
+                                        </a>
+                                    </div>
+                                    <div class="qrafik d-flex ">
+                                        <h5>График работы</h5>
+                                        <div>
+                                            <p>
+                                                Пн-сб: 09:00—21:00
+                                            </p>
+                                            <p>
+                                                ВС: Выходной
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="qrafik d-flex">
+                                        <h5>Контакты</h5>
+                                        <div>
+                                            <ul class="d-flex gap-1 align-items-center">
+                                                <li>
+                                                    <a href="tel:+79992437878"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                            version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            width="25" height="25" x="0" y="0" viewBox="0 0 512 512"
+                                                            style="enable-background:new 0 0 512 512"
+                                                            xml:space="preserve" class="">
+                                                            <g>
+                                                                <circle cx="256" cy="256" r="256" fill="#2196f3"
+                                                                    opacity="1" data-original="#2196f3" class="">
+                                                                </circle>
+                                                                <path fill="#ffffff" fill-rule="evenodd"
+                                                                    d="m412.424 349.946-.273.688c-2.577 6.578-5.166 13.149-7.88 19.677-2.331 5.61-4.743 11.241-7.408 16.7-1.593 3.26-4.116 8.409-6.676 10.969a51.473 51.473 0 0 1-8.588 6.928c-17.86 11.431-40.186 9.82-59.813 4.557-84.306-22.585-196.673-134.952-219.26-219.257-5.26-19.633-6.868-41.965 4.574-59.825a50.861 50.861 0 0 1 6.914-8.577c2.557-2.56 7.712-5.082 10.969-6.675 5.465-2.665 11.1-5.077 16.71-7.408 6.525-2.7 13.1-5.3 19.673-7.88l.685-.264a15.416 15.416 0 0 1 19.044 6.655l32.593 56.466a15.517 15.517 0 0 1-5.66 21.128c-11.529 6.661-20.727 17.023-23.444 30.311a44.606 44.606 0 0 0 8.22 36.581 347.09 347.09 0 0 0 32.12 36.355 347.2 347.2 0 0 0 36.363 32.125 44.586 44.586 0 0 0 36.584 8.221c13.276-2.714 23.65-11.918 30.306-23.447a15.508 15.508 0 0 1 21.122-5.66l56.46 32.6a15.413 15.413 0 0 1 6.665 19.032z"
+                                                                    opacity="1" data-original="#ffffff"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+
+                                                <li><a href="https://wa.me/+79992437878">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            viewBox="0 0 12.031 12.031" xml:space="preserve">
+                                                            <g data-name="Layer 2">
+                                                                <g data-name="09.whatsapp">
+                                                                    <path fill="#29a71a" data-original="#29a71a"
+                                                                        d="M12.031 6.016a6.016 6.016 0 0 1-6.015 6.015A6.016 6.016 0 0 1 0 6.016a6.016 6.016 0 0 1 12.031 0">
+                                                                    </path>
+                                                                    <g fill="#fff">
+                                                                        <path
+                                                                            d="M8.668 3.363a3.73 3.73 0 0 0-5.976 4.315L2.297 9.6a.15.15 0 0 0 .022.111.15.15 0 0 0 .153.06l1.883-.446a3.73 3.73 0 0 0 4.314-5.962M8.081 8.05a2.92 2.92 0 0 1-3.364.547l-.262-.13-1.155.274.003-.015.239-1.162-.128-.254a2.92 2.92 0 0 1 .537-3.391 2.92 2.92 0 0 1 4.13 0l.015.015a2.917 2.917 0 0 1-.015 4.114"
+                                                                            data-original="#ffffff"></path>
+                                                                        <path
+                                                                            d="M7.979 7.197c-.141.223-.365.496-.646.563-.493.12-1.247.004-2.188-.872l-.012-.01c-.827-.766-1.041-1.403-.989-1.909.029-.287.268-.547.47-.716a.268.268 0 0 1 .42.096l.305.684a.26.26 0 0 1-.034.274l-.153.2a.26.26 0 0 0-.023.296c.086.152.293.373.522.579.257.232.542.445.722.518a.26.26 0 0 0 .286-.06l.178-.179a.28.28 0 0 1 .267-.069l.722.206a.274.274 0 0 1 .153.404"
+                                                                            data-original="#ffffff"></path>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </a></li>
+                                                <li>
+                                                    <a href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            viewBox="0 0 11.908 11.908" xml:space="preserve">
+                                                            <path fill="#039be5" data-original="#039be5"
+                                                                d="M11.908 5.954a5.954 5.954 0 0 1-5.954 5.954A5.954 5.954 0 0 1 0 5.954a5.954 5.954 0 0 1 11.908 0">
+                                                            </path>
+                                                            <path fill="#fff"
+                                                                d="m2.723 5.822 5.74-2.215c.264-.092.498.061.417.467l-.976 4.603q-.111.487-.538.254L5.883 7.833l-.722.691c-.081.082-.142.142-.305.142l.102-1.514 2.753-2.489c.122-.101-.03-.162-.182-.061L4.125 6.746l-1.473-.457c-.315-.102-.325-.315.071-.477"
+                                                                data-original="#ffffff"></path>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank" href="https://www.instagram.com/grm78.ru/">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="25"
+                                                            height="25" x="0" y="0" viewBox="0 0 1000 1000"
+                                                            style="enable-background:new 0 0 512 512"
+                                                            xml:space="preserve" class="">
+                                                            <g>
+                                                                <linearGradient id="a" x1="146.447" x2="853.554"
+                                                                    y1="853.554" y2="146.447"
+                                                                    gradientUnits="userSpaceOnUse">
+                                                                    <stop offset="0" stop-color="#ffd521"></stop>
+                                                                    <stop offset=".055" stop-color="#ffd020"></stop>
+                                                                    <stop offset=".124" stop-color="#fec01e"></stop>
+                                                                    <stop offset=".2" stop-color="#fca71b"></stop>
+                                                                    <stop offset=".282" stop-color="#fa8316"></stop>
+                                                                    <stop offset=".368" stop-color="#f85510"></stop>
+                                                                    <stop offset=".456" stop-color="#f51e09"></stop>
+                                                                    <stop offset=".5" stop-color="#f30005"></stop>
+                                                                    <stop offset=".503" stop-color="#f20007"></stop>
+                                                                    <stop offset=".597" stop-color="#e1003b"></stop>
+                                                                    <stop offset=".688" stop-color="#d30067"></stop>
+                                                                    <stop offset=".776" stop-color="#c70088"></stop>
+                                                                    <stop offset=".859" stop-color="#bf00a0"></stop>
+                                                                    <stop offset=".936" stop-color="#bb00af"></stop>
+                                                                    <stop offset="1" stop-color="#b900b4"></stop>
+                                                                </linearGradient>
+                                                                <path fill="url(#a)"
+                                                                    d="M500 1000C223.9 1000 0 776.1 0 500S223.9 0 500 0s500 223.9 500 500-223.9 500-500 500z"
+                                                                    opacity="1" data-original="url(#a)" class=""></path>
+                                                                <g fill="#fff">
+                                                                    <path
+                                                                        d="M500 220.2c91.1 0 101.9.3 137.9 2 33.3 1.5 51.4 7.1 63.4 11.8 15.9 6.2 27.3 13.6 39.2 25.5s19.3 23.3 25.5 39.2c4.7 12 10.2 30.1 11.8 63.4 1.6 36 2 46.8 2 137.9s-.3 101.9-2 137.9c-1.5 33.3-7.1 51.4-11.8 63.4-6.2 15.9-13.6 27.3-25.5 39.2s-23.3 19.3-39.2 25.5c-12 4.7-30.1 10.2-63.4 11.8-36 1.6-46.8 2-137.9 2s-101.9-.3-137.9-2c-33.3-1.5-51.4-7.1-63.4-11.8-15.9-6.2-27.3-13.6-39.2-25.5s-19.3-23.3-25.5-39.2c-4.7-12-10.2-30.1-11.8-63.4-1.6-36-2-46.8-2-137.9s.3-101.9 2-137.9c1.5-33.3 7.1-51.4 11.8-63.4 6.2-15.9 13.6-27.3 25.5-39.2s23.3-19.3 39.2-25.5c12-4.7 30.1-10.2 63.4-11.8 36-1.7 46.8-2 137.9-2m0-61.5c-92.7 0-104.3.4-140.7 2.1-36.3 1.7-61.1 7.4-82.9 15.9C254 185.3 234.9 197 216 216c-19 19-30.6 38-39.4 60.5-8.4 21.7-14.2 46.5-15.9 82.9s-2.1 48-2.1 140.7.4 104.3 2.1 140.7c1.7 36.3 7.4 61.1 15.9 82.9C185.3 746 197 765.1 216 784c19 19 38 30.6 60.5 39.4 21.7 8.4 46.5 14.2 82.9 15.9s48 2.1 140.7 2.1 104.3-.4 140.7-2.1c36.3-1.7 61.1-7.4 82.9-15.9C746 814.7 765.1 803 784 784c19-19 30.6-38 39.4-60.5 8.4-21.7 14.2-46.5 15.9-82.9s2.1-48 2.1-140.7-.4-104.3-2.1-140.7c-1.7-36.3-7.4-61.1-15.9-82.9C814.7 254 803 234.9 784 216c-19-19-38-30.6-60.5-39.4-21.7-8.4-46.5-14.2-82.9-15.9-36.3-1.6-47.9-2-140.6-2z"
+                                                                        fill="#ffffff" opacity="1"
+                                                                        data-original="#ffffff"></path>
+                                                                    <path
+                                                                        d="M500 324.7c-96.8 0-175.3 78.5-175.3 175.3S403.2 675.3 500 675.3 675.3 596.8 675.3 500 596.8 324.7 500 324.7zm0 289.1c-62.8 0-113.8-50.9-113.8-113.8s51-113.8 113.8-113.8S613.8 437.1 613.8 500s-51 113.8-113.8 113.8z"
+                                                                        fill="#ffffff" opacity="1"
+                                                                        data-original="#ffffff"></path>
+                                                                    <circle cx="682.2" cy="317.8" r="41" fill="#ffffff"
+                                                                        opacity="1" data-original="#ffffff">
+                                                                    </circle>
+                                                                </g>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map_side">
+                            <div class="p-0 h-100 border-start border-bottom border-dark">
+                                <div id="map2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="p-0">
+            <div class="footerLnks footerBgClr">
+                <div class="container">
+                    <div class="footerContent">
+                        <div class="socialList row justify-content-between">
+                            <div class="col-lg-3 col-md-12 imgbr">
+                                <img src="/img/grmlogo.png" alt="logo" width="55%">
+                            </div>
+                            <div class="col-lg-3 col-md-12 ">
+
+                                <ul class="list-unstyled list-inline textWrapper clearfix scs">
+                                    <li class="w-100 mb-4"> <span class="footerListHeaderTxt textWrapper"
+                                            style="display:inline-block;margin-top:7px;">«Мы в социальных сетях </span>
+                                    </li>
+                                    <li><a data-analytics-id="Social" href="https://wa.me/+79992437878"> <i
+                                                class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li><a data-analytics-id="Social" href="https://t.me/+79992437878"> <i
+                                                class="fa-brands fa-telegram" aria-hidden="true"></i> </a></li>
+                                    <li><a data-analytics-id="Social" href="mailto:grm78@mail.ru"> <i
+                                                class="fa-solid fa-envelope" aria-hidden="true"></i> </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <div class="footerContactTxt footerPhone foternum">
+                                    <i class="fa fa-location textWrapper  me-2 mb-0" aria-hidden="true"></i><span
+                                        class="hidden-lg hidden-md mb-2" style="font-size:16px;">Адрес: Санкт-Петербург,
+                                        Северный проспект, 69, 1 этаж
+                                        Район Калининский</span><br>
+
+
+
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-12">
+                                <div class="footerContactTxt footerPhone text-leftt">
+                                    <div class=" gap-2 align-items-center">
+                                        <i class="fas fa-envelope-open-text textWrapper mb-0" aria-hidden="true"></i>
+                                        <span class="hidden-lg hidden-md mb-2">grm78@mail.ru</span><br>
+                                        <i class="fa fa-phone-alt textWrapper mt-3" aria-hidden="true"></i><span
+                                            class="hidden-lg hidden-md mb-2" style="font-size:16px;">+7 (999) 243-78-78
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footerNavLinks footerBgClr">
+                <div class="container">
+                    <div class="footer-nav  ">
+                        <a href="/o-kompanii/">О нас</a>
+                        <a href="/tovary/">Услуги</a>
+                        <a href="/sorta">Обзоры</a>
+                        <a href="/contact">Контакты</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footerBottomTxt">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 footerBottomFirstCol">
+                            <div class="cl-1 ">
+                                <p> Copyright © <span class="date">2025</span> - Grm78 <span class="date"></span>. Все
+                                    права
+                                    защищены в соответствии с
+                                    действующим законодательством.</p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 footerBottomLastCol">
+                            <div class="cl-3">
+                                <div class="row footerIskurInfo">
+                                    <div class="col-lg-12">
+                                        <span class="mb5">
+                                            Дизайн, кадровая информация, тексты и фотографии, использованные на сайте,
+                                            не подлежат
+                                            распространению без письменного разрешения компании. Разработка сайта: <a
+                                                class="footer-link site-by" href="http://jeywastudio.com/"
+                                                target="_blank">Jeywa
+                                                Studio</a>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=az_AZ" type="text/javascript">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="/js/script.js"></script>
+    <script type="text/javascript">
+        let center = [60.021456, 30.404568];
+        function init() {
+            let map = new ymaps.Map('map', {
+                center: center,
+                zoom: 15
+            });
+            let placemark = new ymaps.Placemark(center, {}, {
+                iconLayout: 'default#image',
+                iconImageHref: '/img/marker.png',
+                iconImageSize: [61, 77],
+                iconImageOffset: [-42, -65]
+            });
+            map.controls.remove('geolocationControl'); // удаляем геолокацию
+            map.controls.remove('searchControl'); // удаляем поиск
+            map.controls.remove('trafficControl'); // удаляем контроль трафика
+            map.controls.remove('typeSelector'); // удаляем тип
+            map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+            map.behaviors.disable('scrollZoom');
+            //   map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+            map.controls.remove('rulerControl'); // удаляем контрол правил
+            // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+            map.geoObjects.add(placemark);
+        }
+        ymaps.ready(init);
+
+        let center2 = [60.021456, 30.404568];
+        function init2() {
+            let map2 = new ymaps.Map('map2', {
+                center: center2,
+                zoom: 15
+            });
+            let placemark2 = new ymaps.Placemark(center2, {}, {
+                iconLayout: 'default#image',
+                iconImageHref: '/img/marker.png',
+                iconImageSize: [61, 77],
+                iconImageOffset: [-42, -65]
+            });
+            map2.controls.remove('geolocationControl'); // удаляем геолокацию
+            map2.controls.remove('searchControl'); // удаляем поиск
+            map2.controls.remove('trafficControl'); // удаляем контроль трафика
+            map2.controls.remove('typeSelector'); // удаляем тип
+            map2.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+            map2.behaviors.disable('scrollZoom');
+            //   map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+            map2.controls.remove('rulerControl'); // удаляем контрол правил
+            // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+            map2.geoObjects.add(placemark2);
+        }
+        ymaps.ready(init2);
+    </script>
+</body>
+
+</html>
