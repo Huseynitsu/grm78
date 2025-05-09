@@ -1,6 +1,7 @@
 $(document).ready(function () {
     var swiper = new Swiper(".mainSwiper", {
         autoplay: false,
+        slidesPerView: 1,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -19,8 +20,22 @@ $(document).ready(function () {
             prevEl: ".swiper-button-prev",
         },
         loop: true,
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
     });
     
     Fancybox.bind("#feedback img", {

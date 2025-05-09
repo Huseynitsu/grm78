@@ -541,7 +541,7 @@ header {
     height: 100%;
 }
 
-.swiper-slide img {
+#feedback .swiper-slide img {
     height: 160px;
     width: 100%;
     object-fit: contain;
@@ -1115,6 +1115,10 @@ span.copyright {
         grid-template-columns: 1fr;
     }
 
+    .service_cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .header {
         align-items: center;
         position: fixed;
@@ -1133,6 +1137,7 @@ span.copyright {
 
     .swiper_content {
         gap: 0;
+        padding: 0;
     }
 
     .swiper_textimg {
@@ -1145,7 +1150,7 @@ span.copyright {
     }
 
     .swiper_content h2 {
-        font-size: 22px;
+        font-size: 30px;
     }
 
     .swiper_content {
@@ -1157,9 +1162,26 @@ span.copyright {
         top: auto;
     }
 
-    .swiper-slide img {
+    #mainSlider .swiper-slide img {
         height: 80px;
         object-fit: contain;
+    }
+
+    .both_about {
+        flex-direction: column;
+    }
+
+    .left_about,
+    .right_about {
+        width: 100%;
+    }
+
+    .card__description {
+        font-size: 11.5px;
+    }
+
+    .card__content {
+        padding: 10px;
     }
 }
 
