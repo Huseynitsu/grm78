@@ -68,12 +68,12 @@ header {
     padding: 0 30px 0 15px;
 }
 
-.both_header ul {
+.both_header nav ul {
     display: flex;
     gap: 1.5rem;
 }
 
-.both_header ul a {
+.both_header nav ul a {
     font-weight: 600;
     font-size: 20px;
     position: relative;
@@ -83,7 +83,7 @@ header {
     font-size: 18px;
 }
 
-.both_header ul a:not(.tel):after {
+.both_header nav ul a:not(.tel):after {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -94,11 +94,11 @@ header {
     transition: .5s all ease;
 }
 
-.both_header ul a:not(.tel):hover::after {
+.both_header nav ul a:not(.tel):hover::after {
     width: 100%;
 }
 
-.both_header ul a.tel {
+.both_header nav ul a.tel {
     background-color: #fff55a;
     padding: 15px;
     border-radius: 8px;
@@ -106,12 +106,12 @@ header {
     transition: .5s all ease;
 }
 
-.both_header ul a.tel:hover {
+.both_header nav ul a.tel:hover {
     border: 2px solid #fff55a;
     background-color: transparent;
 }
 
-.both_header button {
+.both_header button:not(.btn-close,.navbar-toggler) {
     height: 100%;
     background: #000;
     color: #fff;
@@ -130,7 +130,7 @@ header {
     font-size: 18px;
 }
 
-.both_header button:hover {
+.both_header nav button:hover {
     border: 2px solid #000;
     color: #000;
     background-color: transparent;
@@ -536,10 +536,15 @@ header {
     padding: 3rem 0;
 }
 
-.feedback_imgs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+#feedback .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    height: 160px;
+    width: 100%;
+    object-fit: contain;
 }
 
 .feedback_imgs img {
@@ -1099,3 +1104,63 @@ span.copyright {
 /* footer end */
 
 /* main codes end */
+
+/* responsive */
+
+@media screen and (max-width: 991px) {
+    .adv_cards,
+    .all_blogs,
+    .form_grid,
+    .swiper_textimg {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        align-items: center;
+        position: fixed;
+        background-color: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .header .logo {
+        width: 200px;
+        height: 75px;
+    }
+
+    .offcanvas {
+        max-width: 70%;
+    }
+
+    .swiper_content {
+        gap: 0;
+    }
+
+    .swiper_textimg {
+        padding-top: 0;
+    }
+
+    .swiper_content p,
+    .swiper_textimg ul li {
+        font-size: 13px;
+    }
+
+    .swiper_content h2 {
+        font-size: 22px;
+    }
+
+    .swiper_content {
+        justify-content: center;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        bottom: 90px;
+        top: auto;
+    }
+
+    .swiper-slide img {
+        height: 80px;
+        object-fit: contain;
+    }
+}
+
+/* responsive */

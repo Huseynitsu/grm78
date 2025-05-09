@@ -42,8 +42,8 @@
         <div class="logo">
             <img src="/img/grmlogo.png" alt="logo">
         </div>
-        <div class="d-flex gap-4">
-            <div class="navbar">
+        <div class="d-lg-flex d-none gap-4">
+            <nav class="navbar">
                 <ul>
                     <li><a class="tel" href="tel:+79992437878"><i class="fa-solid fa-phone"></i> +7 (999) 243-78-78</a>
                     </li>
@@ -52,13 +52,36 @@
                     <li><a href="#">Обзоры</a></li>
                     <li><a href="#">Контакт</a></li>
                 </ul>
-            </div>
+            </nav>
             <div class="modal_btn">
                 <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Отправить запрос
                 </button>
             </div>
         </div>
+        <div class="navbar d-lg-none d-block">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ссылки</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Услуги</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Обзоры</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Контакт</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </nav>
     </header>
 
     <div class="second-header both_header d-none d-lg-flex" role="navigation" aria-label="Fixed navigation">
@@ -66,7 +89,7 @@
             <img src="/img/grmlogo.png" alt="logo">
         </div>
         <div class="d-flex gap-4">
-            <div class="navbar">
+            <nav class="navbar">
                 <ul>
                     <li><a class="tel" href="tel:+79992437878"><i class="fa-solid fa-phone"></i> +7 (999) 243-78-78</a>
                     </li>
@@ -75,7 +98,7 @@
                     <li><a href="#">Обзоры</a></li>
                     <li><a href="#">Контакт</a></li>
                 </ul>
-            </div>
+            </nav>
             <div class="modal_btn">
                 <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Отправить запрос
@@ -366,11 +389,50 @@
             <div class="container">
                 <h2 class="sec_title sec_line">ОТЗЫВЫ О НАШЕЙ РАБОТЕ</h2>
                 <div class="feedback_imgs pt-5">
-                    <img src="/img/44946545_334_q70.webp" alt="feedback">
-                    <img src="/img/44946573.jpg" alt="">
-                    <img src="/img/44946575.jpg" alt="">
-                    <img src="/img/44946583.jpg" alt="">
-                    <img src="/img/44946583.jpg" alt="">
+                    <div class="swiper reyler">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/img/44946545_334_q70.webp" alt="feedback">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/44946573.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/44946575.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/44946545_334_q70.webp" alt="feedback">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/44946573.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/44946575.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper reyler pt-4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="/img/44946545_334_q70.webp" alt="feedback">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/44946573.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/44946575.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/44946545_334_q70.webp" alt="feedback">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/44946573.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/img/44946575.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
